@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Connecting to QuickBooks…</title>
+<style>body{font-family:Arial,sans-serif;line-height:1.6;margin:60px auto;max-width:600px;padding:0 20px;color:#222}</style>
+</head>
+<body>
+<h1>Finishing the QuickBooks connection…</h1>
+<p>Passing the authorization back to the Natti_Claude_Connection app on this computer. If nothing happens, make sure the connection script is running in Terminal.</p>
+<script>
+// Relays Intuit's one-time authorization code to the local app on this computer.
+// Nothing is stored or sent anywhere else.
+if (location.search) { location.replace('http://localhost:8000/callback' + location.search); }
+</script>
+</body>
+</html>
